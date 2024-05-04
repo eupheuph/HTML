@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        h1,p,h2{
+            text-align: center;
+        }
+        p{font-weight: bold;}
+        h1,h2{font-family:Arial, Helvetica, sans-serif}
+        form{
+           background-color: beige;
+            display: block;
+  width: 60vw;
+  max-width: 700px;
+  min-width: 300px;
+  margin: auto;
+}
+        
+        
+        body{
+            background-color:aquamarine;
+            font-family:Helvetica; 
+            width: 100%;
+  height: 100vh;
+  margin: 6px;
+ 
+        }
+        input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+}
+.inline{
+    display: block;
+}
+input[type="submit"]{
+background-color: chartreuse;
+border-color:black;
+width: 50%;
+height: 3em;
+font-family:'Arial Narrow Bold', sans-serif;
+font-weight: bold;
+font-size: large;
+}
+/*input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: chartreuse;
+  border-color: black;
+  min-width: 300px;
+}*/
+form{
+    background-color:navajowhite;
+    width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+    
+}
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+    </style>
+</head>
+<body>
+   <H1>SURVEY FORM</H1>
+   <p>We appreciate your participation.Please take the survey and fill your remarks</p>
+   <form method="post" >
+   <h2>Personal information</h2>
+   <label for="name">NAME:<input type="text" id="name" name="name" required></label><br>
+   <label for="address">ADDRESS:<input type="text" id="address" name="name"required></label><br>
+   <label for="gender">GENDER:<select name="gender" id="gender" name="gender" required>
+    <option value="1">Female</option>
+    <option value="2">Male</option>
+    <option value="3">Prefer not to say</option>
+   </select></label><br>
+   <label for="email">EMAIL:<input type="email" id="email" name="email" required></label><br>
+   <label for="phone">TEL NO:<input type="number" id="number" name="number" required></label><br>
+   <h2>Feedback</h2>
+   <legend>How did you hear about our product?</legend>
+<label for="method"><input type="radio" id="method" name="method" class="inline" required checked>social-media</label>
+<label for="method"><input type="radio" id="method" name="method" class="inline" required>Advertisement</label>
+<label for="method"><input type="radio" id="method" name="method" class="inline" required>search-engine</label>
+<label for="method"><input type="radio" id="method" name="method" class="inline" required>other</label>
+<fieldset>
+    <legend>Are you satisfied with our product?</legend>
+    <label for="feedback"><input type="checkbox" id="feedback" name="feedback" class="inline" required checked>very satisfied</label>
+    <label for="feedback"><input type="checkbox" id="feedback" name="feedback" class="inline" required >satisfied</label>
+    <label for="feedback"><input type="checkbox" id="feedback" name="feedback" class="inline" required >neutral</label>
+    <label for="feedback"><input type="checkbox" id="feedback" name="feedback" class="inline" required >unsatisfied</label>
+    <label for="feedback"><input type="checkbox" id="feedback" name="feedback" class="inline" required>disappointed</label>
+</fieldset>
+<fieldset>
+    <legend>Was this your first time using our product?</legend>
+    <label for="frequency"><input type="radio"id="trial" name="trial" class="inline" required checked>YES </label>
+    <label for="frequency"><input type="radio"id="trial" name="trial" class="inline" required > NO </label>
+</fieldset>
+<fieldset>
+    <legend>Which of these products do you use at least twice a week?(check all that apply)</legend>
+    <label for="use"><input type="checkbox" id="use" name="use" class="inline" required checked>sunscreen</label>
+    <label for="use"><input type="checkbox" id="use" name="use" class="inline" required>cologne</label>
+    <label for="use"><input type="checkbox" id="use" name="use" class="inline" required>Deoderant</label>
+    <label for="use"><input type="checkbox" id="use" name="use" class="inline" required>moisturizer</label>
+    <label for="use"><input type="checkbox" id="use" name="use" class="inline" required>powder</label>
+</fieldset>
+<legend>What made us stand out from other companies?</legend>
+<textarea name="preference" id="preference" cols="50" rows="3"></textarea>
+<legend>Any suggestions on how we can improve our services</legend>
+<textarea name="comment" id="comment" cols="50" rows="10"></textarea>
+<hr>
+<p>THANK YOU FOR CHOOSING US!!</p>
+</label>
+<input type="submit" value="Submit" />
+
+   
+
+</form>
+
+</body>
+</html>

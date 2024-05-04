@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cat Photo App</title>
+    <style>
+      img {
+        width: 200px;
+        border-radius: 200px;
+        margin-bottom: 5px;
+      }
+      .hate {
+        font-weight: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CatPhotoApp</h1>
+    <h2>Cat Photos</h2>
+    <p>See more <a href="cat.html">cat photos </a>in our gallery</p>
+    <img src="cat.jpeg" alt="An image of a cat" />
+    <h2>Cat Lists</h2>
+    <h3>Things cat love:</h3>
+    <ul>
+      <li>cat nip</li>
+      <li>laiser pointers</li>
+      <li>lasagna</li>
+    </ul>
+    <img src="lasagna.jpg" alt="An image of lasagna" />
+    <em><p>cats love lasagna</p></em>
+    <h3>Top three things cat hate:</h3>
+    <ol>
+      <li>flea treatment</li>
+      <li>thunder</li>
+      <li>other cats</li>
+    </ol>
+    <img src="kittens.jpg" alt="a photo of kittens">
+    <p class="hate">cats <b>hate</b> other cats</p>
+    <h2>Cat Form</h2>
+    <fieldset>
+      <legend>Is your cat an indor or outdoor cat?</legend>
+      <div>
+        <label></label><input type="radio" name="indoor-outdoor" /> indoor</label>
+      </div>
+      <div>
+        <label></label><input type="radio" name="indoor-outdoor" /> outdoor</label>
+      </div>
+    </fieldset>
+    <fieldset>
+        <legend>What's your cat's personality?</legend>
+        <label><input type="checkbox" name="loving-lazy-energetic" id="loving">loving</label>
+        <label><input type="checkbox" name="loving-lazy-energetic"id="lazy">lazy</label>
+        <label><input type="checkbox" name="loving-lazy-energetic" id="energetic">energrtic</label>
+    </fieldset>
+    <form action="/submit-cat-photo">
+      <input type="text" placeholder="cat photo URL" required />
+      <button type="Submit">Submit</button>
+    </form>
+    <p>No Copyright - <a href="http://freeCodeCamp.org">freeCodeCamp.org</a></p>
+  </body>
+</html>
