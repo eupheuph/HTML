@@ -1,0 +1,58 @@
+body{
+    background-color:black;
+    color: antiquewhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.img1{
+width:100%;
+}
+.img2{
+    width:450px;
+   float: right; 
+   margin-left:10px;
+   
+}
+.img3{
+    width:200px;
+   float: left; 
+   marging-right:10px;
+}
+.quote{
+font-family: sans-serif;
+font-size: larger;
+font-weight: bold;
+color: crimson;
+font-style: italic;
+}
+h1{
+    color:orangered;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 2250;
+    font-family: 'Arial Narrow Bold', sans-serif ;
+}
+h2{
+    color:orangered;
+    text-align: center;
+    text-decoration:overline;
+}
+h3{
+    color:burlywood;
+    text-align: left;
+    text-decoration:underline;   
+}
+.info{
+    font-style: italic;
+    color:crimson;
+}
+.quote::before {
+    content: '" ';
+  }
+  
+  .quote::after {
+    content: ' "';
+  }
+  hr{
+    border-color:orangered;
+  }
